@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManagerWindow</class>
+ <widget class="QDialog" name="ManagerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1414</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>1331</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="booksTab">
+    <attribute name="title">
+     <string>Книги</string>
+    </attribute>
+    <widget class="QPushButton" name="addBookButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить книгу</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="bookTableView">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>50</y>
+       <width>1051</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="booksByPopularity">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>По популярности:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="storesTab">
+    <attribute name="title">
+     <string>Склады</string>
+    </attribute>
+    <widget class="QTableView" name="bookStoreTableView">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>551</width>
+       <height>341</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableView" name="orderStoreTableView">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>90</y>
+       <width>691</width>
+       <height>341</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chooseStore">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выбрать склад:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="store">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>191</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="bookStore">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Книги на складе:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="orderStore">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>60</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Продажи склада:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="authorsTab">
+    <attribute name="title">
+     <string>Авторы</string>
+    </attribute>
+    <widget class="QPushButton" name="addAuthorButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Добавить автора</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="removeAuthorButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>201</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Удалить автора</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="AuthorTableView">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>30</y>
+       <width>1031</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pubTab">
+    <attribute name="title">
+     <string>Издательства</string>
+    </attribute>
+    <widget class="QPushButton" name="addPublisherButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Добавить издательство</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="publisherTableView">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>30</y>
+       <width>1031</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="removePublisherButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>201</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Удалить издательство</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="LogOutButton">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>20</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Log Out</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
